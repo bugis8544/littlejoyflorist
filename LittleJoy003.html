@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Little Joy Florist | Buket Bunga & Balon Custom - Joy Roesma</title>
+    <meta name="description" content="Little Joy Florist menyediakan rangkaian bunga segar, balon custom, dan kado unik. Konsultasi langsung dengan Joy Roesma. Foto real-pic sebelum kirim.">
+    <meta name="keywords" content="toko bunga terdekat, florist balon, kado wisuda, buket anniversary, hadiah custom, joy roesma florist">
+    
+    <!-- Open Graph (Untuk Tampilan Share di Media Sosial) -->
+    <meta property="og:title" content="Little Joy Florist | One-Stop Gift Solution">
+    <meta property="og:description" content="Pesan kado spesial tanpa rasa khawatir. Konsultasi via WhatsApp sekarang.">
+    <meta property="og:type" content="website">
+
+    <!-- Dependencies: Tailwind CSS, Lucide Icons, Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; }
+        
+        /* Palet Warna Kustom */
+        .bg-pastel-pink { background-color: #FFF2F2; }
+        .bg-pastel-cream { background-color: #FCF9F6; }
+        .text-joy-pink { color: #D68D8D; }
+        .bg-joy-pink { background-color: #D68D8D; }
+        .border-joy-pink { border-color: #EBCBCB; }
+
+        /* Animasi dan Efek */
+        .whatsapp-float { transition: all 0.3s ease; }
+        .whatsapp-float:hover { transform: translateY(-5px); box-shadow: 0 15px 30px -5px rgba(34, 197, 94, 0.4); }
+        
+        .ceo-photo { 
+            filter: brightness(1.05) contrast(1.02) saturate(1.1); 
+            object-fit: cover;
+        }
+
+        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-item.active .faq-content { max-height: 300px; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); }
+
+        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); }
+        
+        /* Utilitas Hover Kartu */
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- 🌐 NAVIGASI -->
+    <nav class="fixed top-0 w-full glass-nav z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-joy-pink serif italic">Little Joy.</a>
+            <!-- MENU TENGAH AKTIF -->
+            <div class="hidden lg:flex items-center gap-8 text-xs font-bold text-gray-400 uppercase tracking-widest">
+                <a href="#layanan" class="hover:text-joy-pink transition">Florist</a>
+                <a href="#layanan" class="hover:text-joy-pink transition">Balloons</a>
+                <a href="#momen" class="hover:text-joy-pink transition">Gifts</a>
+            </div>
+            <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20ingin%20konsultasi%20hadiah%20sekarang." 
+               class="bg-joy-pink text-white px-7 py-2.5 rounded-full text-sm font-bold hover:bg-opacity-90 transition shadow-sm">
+                Chat WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1️⃣ HERO SECTION (SEO H1) -->
+    <header class="relative pt-44 pb-28 px-6 bg-pastel-cream overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-pink-100 text-joy-pink text-[10px] font-bold mb-8 tracking-[0.2em] uppercase">
+                <i data-lucide="sparkles" class="w-3 h-3"></i> Artisan Gift & Florist
+            </div>
+            <h1 class="text-4xl md:text-7xl font-bold leading-[1.1] mb-8 text-slate-900">
+                Toko Bunga & Balon Pilihan: <br><span class="text-joy-pink italic">Kirim Hadiah Tanpa Rasa Khawatir.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Bingung memilih hadiah yang tepat? Kami membantu Anda merangkai pesan emosional melalui bunga dan kado yang dipersonalisasi.
+            </p>
+            
+            <div class="flex flex-col items-center gap-5">
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy%20Florist,%20saya%20ingin%20pesan%20hadiah%20spesial.%20Bisa%20bantu%20rekomendasinya?" 
+                   class="flex items-center justify-center gap-3 bg-green-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-green-600 transition shadow-2xl whatsapp-float">
+                    <i data-lucide="message-circle" class="w-7 h-7"></i>
+                    Konsultasi Hadiah Sekarang
+                </a>
+                <div class="flex items-center gap-6 text-sm text-slate-500 font-medium italic">
+                    <span class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-joy-pink"></i> Sen - Sab (08.30 - 17.00)</span>
+                    <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-joy-pink"></i> Foto Sebelum Kirim</span>
+                </div>
+            </div>
+        </div>
+        <!-- Elemen Dekoratif Ringan -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-pink-100 rounded-full blur-3xl opacity-30 -mr-48 -mt-48"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-pink-50 rounded-full blur-3xl opacity-30 -ml-48 -mb-48"></div>
+    </header>
+
+    <!-- 2️⃣ SINYAL KEPERCAYAAN LOKAL -->
+    <section class="py-14 bg-white border-b border-gray-50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="flex items-center gap-5">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-pastel-pink flex items-center justify-center text-joy-pink shadow-sm"><i data-lucide="map-pin"></i></div>
+                <div>
+                    <h3 class="font-bold text-slate-900">Area Layanan Lokal</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Pengiriman aman & tepat waktu ke seluruh sudut kota.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 border-y md:border-y-0 md:border-x border-slate-100 py-8 md:py-0 md:px-10">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-400 shadow-sm"><i data-lucide="clock"></i></div>
+                <div>
+                    <h3 class="font-bold text-slate-900">Respons Cepat</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Admin standby di jam operasional (08.30 - 17.00).</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-green-50 flex items-center justify-center text-green-500 shadow-sm"><i data-lucide="shield-check"></i></div>
+                <div>
+                    <h3 class="font-bold text-slate-900">Kualitas Artisan</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Setiap kado dirangkai khusus, bukan produk massal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ PENYARINGAN PENGUNJUNG (QUALIFICATION) -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Apakah Kami Florist yang Anda Cari?</h2>
+                <div class="w-20 h-1 bg-joy-pink mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 shadow-sm">
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center gap-3 mb-6">
+                        <i data-lucide="heart" class="text-green-500"></i> Sangat cocok jika Anda:
+                    </h3>
+                    <ul class="space-y-5 text-sm text-slate-600">
+                        <li class="flex items-start gap-4"><i data-lucide="check" class="w-5 h-5 text-green-500 mt-0.5 shrink-0"></i> Ingin kado yang terlihat premium & tidak pasaran.</li>
+                        <li class="flex items-start gap-4"><i data-lucide="check" class="w-5 h-5 text-green-500 mt-0.5 shrink-0"></i> Menghargai proses konsultasi personal via WhatsApp.</li>
+                        <li class="flex items-start gap-4"><i data-lucide="check" class="w-5 h-5 text-green-500 mt-0.5 shrink-0"></i> Membutuhkan kepastian hasil melalui foto approval.</li>
+                    </ul>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-white border border-slate-100">
+                    <h3 class="font-bold text-slate-400 text-lg flex items-center gap-3 mb-6">
+                        <i data-lucide="minus-circle"></i> Kurang cocok jika Anda:
+                    </h3>
+                    <ul class="space-y-5 text-sm text-slate-400 italic">
+                        <li class="flex items-start gap-4"><i data-lucide="x" class="w-5 h-5 mt-0.5 shrink-0"></i> Hanya mencari harga termurah tanpa memedulikan kualitas.</li>
+                        <li class="flex items-start gap-4"><i data-lucide="x" class="w-5 h-5 mt-0.5 shrink-0"></i> Terburu-buru tanpa ingin melalui proses approval hasil.</li>
+                        <li class="flex items-start gap-4"><i data-lucide="x" class="w-5 h-5 mt-0.5 shrink-0"></i> Membutuhkan pengiriman mendadak di hari Minggu (Kami Libur).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ VALIDASI MASALAH -->
+    <section class="py-24 px-6 bg-pastel-cream">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Sulit Mencari Kado yang "Pas" Secara Online?</h2>
+            <div class="space-y-5 text-left">
+                <div class="bg-white p-7 rounded-2xl flex items-center gap-5 shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-400 shrink-0"><i data-lucide="alert-circle" class="w-5 h-5"></i></div>
+                    <p class="text-slate-600 italic text-sm md:text-base">"Takut hasil aslinya beda jauh sama yang dipajang di katalog media sosial."</p>
+                </div>
+                <div class="bg-white p-7 rounded-2xl flex items-center gap-5 shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-400 shrink-0"><i data-lucide="alert-circle" class="w-5 h-5"></i></div>
+                    <p class="text-slate-600 italic text-sm md:text-base">"Bingung bunga apa yang cocok buat si dia biar tidak salah pesan momen."</p>
+                </div>
+                <div class="bg-white p-7 rounded-2xl flex items-center gap-5 shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-400 shrink-0"><i data-lucide="alert-circle" class="w-5 h-5"></i></div>
+                    <p class="text-slate-600 italic text-sm md:text-base">"Cemas pesanan rusak di jalan atau terlambat sampai di momen krusial."</p>
+                </div>
+            </div>
+            <p class="mt-14 text-xl font-bold text-joy-pink serif italic">Di Little Joy, kado Anda dirangkai dengan penuh tanggung jawab.</p>
+        </div>
+    </section>
+
+    <!-- 5️⃣ SOLUSI (KATALOG EMOSIONAL) -->
+    <section id="layanan" class="py-28 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">One-Stop Gift Solution</h2>
+                <p class="text-slate-500 italic">Kami fokus pada hasil emosional, bukan sekadar produk.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="group hover-lift">
+                    <div class="h-80 rounded-[2.5rem] overflow-hidden mb-8 shadow-sm relative">
+                        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Buket Bunga">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rangkaian Bunga Segar</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Florist kami merangkai bunga segar harian untuk sampaikan rindu, cinta, atau maaf secara elegan.</p>
+                </div>
+                <div class="group hover-lift">
+                    <div class="h-80 rounded-[2.5rem] overflow-hidden mb-8 shadow-sm relative">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Balon Custom">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Balon Joyful Custom</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Beri keceriaan lebih dengan balon custom yang bisa ditulisi pesan personal sesuai keinginan Anda.</p>
+                </div>
+                <div class="group hover-lift">
+                    <div class="h-80 rounded-[2.5rem] overflow-hidden mb-8 shadow-sm relative">
+                        <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Hampers">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kado Unik & Hampers</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Cari sesuatu yang berbeda? Koleksi gift box kami terkurasi sangat cantik untuk momen spesial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6️⃣ ENTRY POINT BERBASIS MOMEN -->
+    <section id="momen" class="py-24 px-6 bg-pastel-cream">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-14">Temukan Kado Berdasarkan Momen:</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+                <!-- Loop Momen -->
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20butuh%20kado%20Ulang%20Tahun." class="bg-white p-7 rounded-[2rem] text-center shadow-sm hover:shadow-md transition group border border-transparent hover:border-joy-pink">
+                    <i data-lucide="cake" class="w-10 h-10 text-joy-pink mx-auto mb-4 group-hover:scale-110 transition"></i>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-700">Birthday</p>
+                </a>
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20butuh%20kado%20Anniversary." class="bg-white p-7 rounded-[2rem] text-center shadow-sm hover:shadow-md transition group border border-transparent hover:border-joy-pink">
+                    <i data-lucide="heart" class="w-10 h-10 text-joy-pink mx-auto mb-4 group-hover:scale-110 transition"></i>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-700">Anniversary</p>
+                </a>
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20cari%20kado%20Wisuda." class="bg-white p-7 rounded-[2rem] text-center shadow-sm hover:shadow-md transition group border border-transparent hover:border-joy-pink">
+                    <i data-lucide="graduation-cap" class="w-10 h-10 text-joy-pink mx-auto mb-4 group-hover:scale-110 transition"></i>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-700">Graduation</p>
+                </a>
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20ingin%20buat%20Kejutan." class="bg-white p-7 rounded-[2rem] text-center shadow-sm hover:shadow-md transition group border border-transparent hover:border-joy-pink">
+                    <i data-lucide="sparkles" class="w-10 h-10 text-joy-pink mx-auto mb-4 group-hover:scale-110 transition"></i>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-700">Surprise</p>
+                </a>
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20ingin%20beri%20Apresiasi." class="bg-white p-7 rounded-[2rem] text-center shadow-sm hover:shadow-md transition group border border-transparent hover:border-joy-pink">
+                    <i data-lucide="smile" class="w-10 h-10 text-joy-pink mx-auto mb-4 group-hover:scale-110 transition"></i>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-700">Appreciation</p>
+                </a>
+                <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20ingin%20mengirimkan%20ucapan%20Simpati." class="bg-white p-7 rounded-[2rem] text-center shadow-sm hover:shadow-md transition group border border-transparent hover:border-joy-pink">
+                    <i data-lucide="heart-pulse" class="w-10 h-10 text-joy-pink mx-auto mb-4 group-hover:scale-110 transition"></i>
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-slate-700">Sympathy</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO PROFILE SECTION -->
+    <section class="py-28 px-6 bg-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-64 h-80 bg-slate-100 rounded-[2.5rem] overflow-hidden shadow-2xl shrink-0 border-[10px] border-white flex items-center justify-center relative rotate-2">
+                <img 
+                    src="WhatsApp%20Image%202026-01-12%20at%2009.53.13.jpeg" 
+                    class="w-full h-full ceo-photo" 
+                    alt="Joy Roesma - Founder Little Joy Florist"
+                    onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                >
+                <div class="hidden flex flex-col items-center justify-center bg-joy-pink text-white w-full h-full text-center p-6">
+                    <i data-lucide="user-round" class="w-20 h-20 mb-3 opacity-30"></i>
+                    <p class="text-base font-bold serif italic">Joy Roesma</p>
+                </div>
+            </div>
+            <div class="text-left flex-1">
+                <i data-lucide="quote" class="w-16 h-16 text-joy-pink opacity-10 mb-6"></i>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 italic serif leading-[1.4] text-slate-800">
+                    "Saya memulai Little Joy karena saya percaya kado bukan soal barangnya, tapi soal perasaan 'didengar' dan 'dihargai'. Setiap rangkaian adalah reputasi saya."
+                </h2>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-[2px] bg-joy-pink"></div>
+                    <div>
+                        <p class="font-bold text-slate-900 text-lg">Joy Roesma</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Owner & Creative Lead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7️⃣ RISK REVERSAL (JAMINAN) -->
+    <section class="py-10 px-6">
+        <div class="max-w-5xl mx-auto bg-slate-900 rounded-[3.5rem] p-12 md:p-20 text-white text-center relative overflow-hidden">
+            <h2 class="text-3xl font-bold mb-16 relative z-10">Jaminan Ketenangan Anda</h2>
+            <div class="grid md:grid-cols-3 gap-14 relative z-10">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-joy-pink mx-auto"><i data-lucide="camera" class="w-6 h-6"></i></div>
+                    <h4 class="font-bold">Real-Pic Approval</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Kami selalu mengirimkan foto hasil kado via WhatsApp SEBELUM dikirim oleh kurir.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-joy-pink mx-auto"><i data-lucide="message-square" class="w-6 h-6"></i></div>
+                    <h4 class="font-bold">Konsultasi Personal</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Bebas revisi minor atau ganti nuansa warna selama stok masih tersedia. Kami mendengar Anda.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-joy-pink mx-auto"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h4 class="font-bold">Pengiriman Aman</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Kurir kami terlatih membawa barang pecah belah & rangkaian bunga agar sampai dalam kondisi sempurna.</p>
+                </div>
+            </div>
+            <!-- Glow Effect -->
+            <div class="absolute top-0 right-0 w-80 h-80 bg-joy-pink opacity-10 rounded-full blur-[100px] -mr-40 -mt-40"></div>
+        </div>
+    </section>
+
+    <!-- 1️⃣1️⃣ FAQ SECTION -->
+    <section id="faq" class="py-28 px-6 bg-white border-t border-slate-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 italic serif">Sering Ditanyakan</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-slate-100 rounded-3xl overflow-hidden cursor-pointer bg-pastel-cream transition-all duration-300">
+                    <div class="p-7 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-slate-800 text-sm md:text-base">Apakah bisa kirim di hari yang sama (Same-Day)?</h4>
+                        <div class="faq-icon transition-transform duration-300 text-joy-pink"><i data-lucide="chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content px-7 pb-7 text-sm text-slate-500 leading-relaxed">
+                        Tentu! Kami menerima pesanan same-day di hari Senin - Sabtu selama slot harian masih tersedia. Sangat disarankan untuk chat sebelum jam 12.00 siang.
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-slate-100 rounded-3xl overflow-hidden cursor-pointer bg-white transition-all duration-300">
+                    <div class="p-7 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-slate-800 text-sm md:text-base">Bagaimana jika saya ingin custom kado sendiri?</h4>
+                        <div class="faq-icon transition-transform duration-300 text-joy-pink"><i data-lucide="chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content px-7 pb-7 text-sm text-slate-500 leading-relaxed">
+                        Sangat bisa! Anda bebas berkonsultasi via WhatsApp. Tim kami akan membantu memadukan bunga, balon, dan hadiah unik lainnya sesuai visi dan budget Anda.
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-slate-100 rounded-3xl overflow-hidden cursor-pointer bg-pastel-cream transition-all duration-300">
+                    <div class="p-7 flex justify-between items-center" onclick="toggleFaq(this)">
+                        <h4 class="font-bold text-slate-800 text-sm md:text-base">Apakah buka di hari Minggu?</h4>
+                        <div class="faq-icon transition-transform duration-300 text-joy-pink"><i data-lucide="chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content px-7 pb-7 text-sm text-slate-500 leading-relaxed">
+                        Kami libur operasional di hari Minggu. Namun, kami tetap menerima pesanan di hari Minggu untuk pengiriman di hari Senin atau hari kerja lainnya.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1️⃣2️⃣ FINAL CTA -->
+    <section class="py-32 px-6 text-center bg-pastel-cream">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 italic serif text-slate-900 leading-tight">Momen Berharga <br>Tak Akan Terulang Kembali.</h2>
+            <p class="text-lg md:text-xl text-slate-600 mb-14 leading-relaxed max-w-2xl mx-auto">Jangan biarkan momen berharga berlalu tanpa kesan mendalam. Mari buat mereka merasa sangat dihargai hari ini.</p>
+            
+            <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy%20Florist,%20saya%20sudah%20melihat%20halaman%20ini%20dan%20ingin%20memesan%20hadiah!" 
+               class="inline-flex items-center gap-4 bg-green-500 text-white px-12 py-5 rounded-full font-bold text-xl hover:bg-green-600 transition shadow-2xl whatsapp-float">
+                <i data-lucide="message-circle" class="w-8 h-8"></i>
+                Chat via WhatsApp Sekarang
+            </a>
+            
+            <div class="mt-20 flex flex-col items-center gap-3">
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-[0.3em]">Jam Kerja Aktif</p>
+                <p class="font-bold text-slate-900 text-lg">Senin - Sabtu | 08.30 - 17.00 WIB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👣 FOOTER -->
+    <footer class="py-16 border-t border-slate-100 text-center bg-white">
+        <div class="text-2xl font-bold text-joy-pink serif italic mb-6">Little Joy.</div>
+        <p class="text-xs text-slate-400 mb-10 max-w-xs mx-auto italic leading-relaxed">Bloom & Balloons Boutique — Menyulap momen biasa menjadi kenangan luar biasa.</p>
+        
+        <div class="flex justify-center gap-8 mb-12 text-slate-400">
+            <a href="#" class="hover:text-joy-pink transition"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+            <a href="#" class="hover:text-joy-pink transition"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+        </div>
+        
+        <div class="text-[9px] text-slate-300 uppercase tracking-widest">
+            &copy; 2024 Little Joy Florist. Seluruh Hak Dilindungi.
+        </div>
+    </footer>
+
+    <!-- 📱 STICKY WHATSAPP (Mobile Focus) -->
+    <div class="fixed bottom-10 right-8 z-[100] md:hidden">
+        <a href="https://wa.me/628123456789?text=Halo%20Little%20Joy,%20saya%20ingin%20tanya%20mengenai%20hadiah%20custom." 
+           class="flex items-center justify-center w-16 h-16 bg-green-500 text-white rounded-full shadow-2xl whatsapp-float">
+            <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </a>
+    </div>
+
+    <!-- Script Utama -->
+    <script>
+        // Inisialisasi ikon Lucide
+        lucide.createIcons();
+
+        // Logika Toggle FAQ
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Tutup semua FAQ lainnya
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+            
+            // Toggle yang diklik
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
